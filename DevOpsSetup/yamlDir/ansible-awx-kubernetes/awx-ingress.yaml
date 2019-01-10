@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: awx
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: tower.mydomain.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: awx-web
+          servicePort: 80
