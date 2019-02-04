@@ -1,0 +1,90 @@
+# Just for reading
+#https://learn.hashicorp.com/terraform/getting-started/build
+
+# Here is the documentation followed for scripting the mesos setup with terraform
+https://docs.mesosphere.com/1.12/installing/evaluation/aws/
+
+# Prerequisites:
+1. AWS Credentials
+2. Install aws-cli binary
+3. Install terraform binary
+   https://www.terraform.io/downloads.html
+   For Linux 64bit - https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
+4. Configure aws-cli 
+   pip install awscli --upgrade --user
+   aws configure --profile=mesos_terraform_profile
+5. Setup ssh key .. if you dont already have one
+
+# Next steps are for terrform setup for DS/OS setup
+1. Create director
+   mkdir dcos-aws-demo && cd dcos-aws-demo
+2. create main.tf
+   
+echo "
+provider "aws" {
+  region = "us-east-1"
+}
+
+module "dcos" {
+  source  = "dcos-terraform/dcos/aws"
+  version = "~> 0.1"
+
+  cluster_name        = "my-dcos-demo"
+  ssh_public_key_file = "~/.ssh/id_rsa.pub"
+  admin_ips           = ["${data.http.whatismyip.body}/32"]
+
+  num_masters        = "1"
+  num_private_agents = "2"
+  num_public_agents  = "1"
+
+  dcos_version = "1.12.0"
+
+  dcos_instance_os    = "centos_7.5"
+  bootstrap_instance_type = "t2.medium"
+  masters_instance_type  = "t2.medium"
+  private_agents_instance_type = "t2.medium"
+  public_agents_instance_type = "t2.medium"
+
+  providers = {
+    aws = "aws"
+  }
+
+  # dcos_variant              = "ee"
+  # dcos_license_key_contents = "${file("./license.txt")}"
+  dcos_variant = "open"
+
+  dcos_install_mode = "${var.dcos_install_mode}"
+}
+
+variable "dcos_install_mode" {
+  description = "specifies which type of command to execute. Options: install or upgrade"
+  default     = "install"
+}
+
+# Used to determine your public IP for forwarding rules
+data "http" "whatismyip" {
+  url = "http://whatismyip.akamai.com/"
+}
+
+output "masters-ips" {
+  value = "${module.dcos.masters-ips}"
+}
+
+output "cluster-address" {
+  value = "${module.dcos.masters-loadbalancer}"
+}
+
+output "public-agents-loadbalancer" {
+  value = "${module.dcos.public-agents-loadbalancer}"
+}" > main.tf
+
+# Initialize terraform
+terraform init
+
+# Save the plan
+terraform plan -out=plan.out
+
+# apply the plan
+terraform apply plan.out
+
+
