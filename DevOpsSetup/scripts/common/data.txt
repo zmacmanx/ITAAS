@@ -1,0 +1,156 @@
+[
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/AWS-SSM-Agent-test",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "AWS-SSM-Agent-test",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/AzureBackupRG_eastus_1",
+    "location": "eastus",
+    "managedBy": "subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/providers/Microsoft.RecoveryServices/",
+    "name": "AzureBackupRG_eastus_1",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/CIS-CT",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "CIS-CT",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/CIS-CT-OMS",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "CIS-CT-OMS",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/cis-dbmigrate-rg",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "cis-dbmigrate-rg",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {},
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/cis-infra-rg",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "cis-infra-rg",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/cloud-shell-storage-eastus",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "cloud-shell-storage-eastus",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/dashboards",
+    "location": "centralus",
+    "managedBy": null,
+    "name": "dashboards",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/DefaultResourceGroup-EUS",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "DefaultResourceGroup-EUS",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/ITSS_walton",
+    "location": "centralus",
+    "managedBy": null,
+    "name": "ITSS_walton",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": {},
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/MC_rg-kubedemo-aks_kc-kubedemo-aks_eastus",
+    "location": "eastus",
+    "managedBy": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/rg-kubedemo-aks/providers/Microsoft.ContainerService/managedClusters/kc-kubedemo-aks",
+    "name": "MC_rg-kubedemo-aks_kc-kubedemo-aks_eastus",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/MyRG",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "MyRG",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/NetworkWatcherRG",
+    "location": "westus",
+    "managedBy": null,
+    "name": "NetworkWatcherRG",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  },
+  {
+    "id": "/subscriptions/c262b2f5-4e7d-4506-968a-0bf64abfb227/resourceGroups/rg-kubedemo-aks",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "rg-kubedemo-aks",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": null
+  }
+]
