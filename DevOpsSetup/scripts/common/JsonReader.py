@@ -3,7 +3,7 @@ import sys
 import os
 import subprocess
 import hashlib
-
+ 
 cmdPrefix = "az"
 objectList = open("objectList.txt", "r")
 for currentObject in objectList:
@@ -22,17 +22,8 @@ for currentObject in objectList:
     print
     #json.dump(rec, sys.stdout, indent=4)
   
-  print
-  print
+  print()
+  print()
 
 objectList.close()
-exit(0)
-
-# with open('data.txt') as json_file:  
-  # data = json.load(json_file)
-
-  # for rec in data:
-    # print(rec['id'])
-    # json.dump(rec, sys.stdout, indent=4)
-    # print
     
