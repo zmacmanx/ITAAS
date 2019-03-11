@@ -1,0 +1,37 @@
+[
+  {
+    "Id": "1",
+    "CompanyId": "2",
+    "Cloud": "AWS",
+    "AccountId": "abc",
+    "Password": "abc"
+  },
+  {
+    "Id": "2",
+    "CompanyId": "2",
+    "Cloud": "GCP",
+    "AccountId": "def",
+    "Password": "def"
+  },
+  {
+    "Id": "3",
+    "CompanyId": "2",
+    "Cloud": "Azure",
+    "AccountId": "ghi",
+    "Password": "ghi"
+  },
+  {
+    "Id": "4",
+    "CompanyId": "3",
+    "Cloud": "Azure",
+    "AccountId": "abc",
+    "Password": "abc"
+  },
+  {
+    "Id": "5",
+    "CompanyId": "1",
+    "Cloud": "AWS",
+    "AccountId": "abc",
+    "Password": "abc"
+  }
+]
