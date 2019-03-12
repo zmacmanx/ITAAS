@@ -1,0 +1,5 @@
+AWS:*:id
+AWS:*:location
+AWS:vm:name
+Azure:*:id
+Azure:vm:name

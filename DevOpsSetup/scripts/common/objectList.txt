@@ -1,2 +1,2 @@
-group
-vm
+Azure:az:list:group
+Azure:az:list:vm
