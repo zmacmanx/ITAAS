@@ -65,6 +65,7 @@ class readCloudObjects:
       if cmd == cmdTmp:
         tarr.append(tmp[4])
       else:
+        print("Working On " + tmp[0] + tmp[3])
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=None, shell=True)
         output = process.communicate()
         data = json.loads(output[0])
@@ -81,6 +82,7 @@ class readCloudObjects:
         cmd = cmdTmp
         for cnt in range(len(tarr), 0):
           tarr[(cnt-1)].pop()
+        tarr.append(tmp[4])
         print()
         print()
     
