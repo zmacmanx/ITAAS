@@ -1,0 +1,36 @@
+[
+  {
+    "Cloud": "Azure",
+    "Command": "az",
+    "CloudObjects": [ 
+      {
+        "CloudEntity": "vm",
+        "Subcommand": "list",
+        "Attributes": [
+          "id",
+          "name"
+        ]
+      },
+      {
+        "CloudEntity": "group",
+        "Subcommand": "list",
+        "Attributes": [
+          "id"
+        ]
+      }
+    ]
+  },
+    {
+    "Cloud": "AWS",
+    "Command": "aws",
+    "CloudObjects": [ 
+      {
+        "CloudEntity": "ec2",
+        "Subcommand": "describe-instances",
+        "Attributes": [
+          "id"
+        ]
+      }
+    ]
+  }
+]
