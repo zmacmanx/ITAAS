@@ -47,8 +47,8 @@ class readCloudObjects:
             if(data['Command'] == 'az'):
               print("    " + attr + " " + rec[attr])
             else:
-              print(str(rec))
-
+              # print(str(rec))
+              print(cloudData['Reservations'][0]['Instances'][0]['InstanceId'])
         print()
         print()
 
