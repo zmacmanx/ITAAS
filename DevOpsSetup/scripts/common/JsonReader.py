@@ -40,12 +40,17 @@ class readCloudObjects:
           dataRecord = str(rec)
           dataRecordHash = hashlib.md5(dataRecord.encode())
           print(str(dataRecordHash.hexdigest()))
+
           for xx in range(0, len(data['CloudObjects'][cnt]['Attributes'])):
+            attr = data['CloudObjects'][cnt]['Attributes'][xx]
+
             if(data['Command'] == 'az'):
-              attr = data['CloudObjects'][cnt]['Attributes'][xx]
               print("    " + attr + " " + rec[attr])
             else:
               print(str(rec))
+
+        print()
+        print()
 
   def printDataMap(self):
     for data in self.dataMap:
